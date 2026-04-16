@@ -21,7 +21,7 @@ nav {
 .menu ul li a {
   font-size: 1.25rem;
   text-decoration: none;
-  color: darkcyan;
+  color: rgb(5, 196, 196);
   text-align: center;
 }
 .menu ul li a:hover {
@@ -33,7 +33,7 @@ nav {
   text-decoration: none;
   padding: 8px 16px;
   color: rgb(2, 46, 46);
-  background-color: rgb(133, 253, 253);
+  background-color: rgb(100, 176, 176);
   border-radius: 5px;
   font-weight: 500;
 }
@@ -43,7 +43,7 @@ nav {
 }
 .menu ul li a:hover,
 .userName a:hover {
-  color: grey;
+  color: rgb(18, 250, 234);
 }
 
 .container {
@@ -65,11 +65,11 @@ nav {
   color: grey;
 }
 .secondHeading {
-  color: cyan;
+  color: rgb(9, 95, 95);
 }
 .details {
   font-size: 1rem;
-  color: lightgray;
+  color: rgb(124, 164, 161);
   margin: 20px 0;
 }
 .btn {
@@ -81,6 +81,7 @@ nav {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 .btn:hover {
   background-color: rgb(38, 72, 222);
