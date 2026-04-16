@@ -72,9 +72,7 @@ nav {
   border: none;
   cursor: pointer;
 }
-.menu-toggle:focus + .mobilemenu {
-  display: flex;
-}
+
 .mobilemenu {
   width: 50%;
   background-color: black;
@@ -84,7 +82,12 @@ nav {
   align-items: center;
   position: absolute;
   right: 0;
-  height: -webkit-fill-available;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }
 .mobilemenu ul {
   list-style: none;
@@ -98,6 +101,12 @@ nav {
   color: var(--text-primary);
   text-align: center;
 }
+.menu-toggle:focus + .mobilemenu,
+.mobilemenu:focus-within {
+  transform: translateX(0);
+  display: flex;
+}
+
 .container {
   padding: 10px 5px;
   display: flex;
